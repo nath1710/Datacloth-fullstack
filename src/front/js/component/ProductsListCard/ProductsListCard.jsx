@@ -33,7 +33,7 @@ function ProductsListCard({ product, triggerRefresh }) {
           <h3 className="text-xl font-semibold">{product.name}</h3>
 
           <div className="mt-2 flex flex-wrap justify-center sm:justify-start gap-4 text-sm text-gray-500">
-            <div>Creation date <span className="font-bold text-black block sm:inline">{product.creation_date}</span></div>
+            <div>Creation date <span className="font-bold text-black block sm:inline">{product.creation_date.split("T")[0]}</span></div>
             <div>Category <span className="font-bold text-black block sm:inline">{product.category}</span></div>
             <div>Price <span className="font-bold text-black block sm:inline">${product.price}</span></div>
             <div>Stock <span className="font-bold text-black block sm:inline">{product.stock}</span></div>

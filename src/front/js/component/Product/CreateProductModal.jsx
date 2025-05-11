@@ -33,7 +33,6 @@ function CreateProductModal({ isOpen, onClose }) {
 
     const dataToSend = {
       ...formData,
-      image: [formData.image],
       category_id: parseInt(formData.category_id),
       price: parseFloat(formData.price),
       stock: parseInt(formData.stock),
